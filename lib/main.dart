@@ -16,6 +16,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 void main() async{
   HttpOverrides.global = new MyHttpOverrides();
 
+
   WidgetsFlutterBinding.ensureInitialized();
   await SystemChrome.setPreferredOrientations( Device.get().isPhone ?
   [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown,] :
